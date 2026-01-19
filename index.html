@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE FLEX | Official Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --gold-gradient: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+            --black: #050505;
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            background-color: var(--black);
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+            padding: 20px;
+        }
+
+        .main-logo {
+            width: 320px;
+            max-width: 80%;
+            filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.4));
+            animation: breathe 5s ease-in-out infinite;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            letter-spacing: 15px;
+            margin: 20px 0;
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-title {
+            text-align: center;
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            font-size: 2.5rem;
+            margin: 80px 0 40px;
+            letter-spacing: 5px;
+        }
+
+        .members-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 0 20px 100px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .member-card {
+            background: var(--glass);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            width: 260px;
+            padding: 20px;
+            text-align: center;
+            transition: 0.4s;
+            border-radius: 5px;
+        }
+
+        .member-card:hover {
+            border-color: var(--gold);
+            transform: translateY(-10px);
+            background: rgba(212, 175, 55, 0.05);
+        }
+
+        .member-card img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 15px;
+            border: 1px solid rgba(212,175,55,0.2);
+        }
+
+        .member-card h3 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold);
+            margin: 10px 0;
+        }
+
+        .mbti {
+            font-size: 0.7rem;
+            background: var(--gold);
+            color: #000;
+            padding: 2px 6px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .reveal-box {
+            max-width: 800px;
+            margin: 100px auto;
+            border: 1px solid var(--gold);
+            padding: 60px 40px;
+            text-align: center;
+            background: #000;
+        }
+
+        input[type="email"] {
+            width: 100%;
+            max-width: 300px;
+            padding: 15px;
+            background: transparent;
+            border: 1px solid var(--gold);
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .gold-btn {
+            background: var(--gold-gradient);
+            color: black;
+            padding: 16px 35px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'Cinzel';
+            letter-spacing: 2px;
+        }
+
+        #secret-letter {
+            display: none;
+            margin-top: 40px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        #secret-letter img {
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 0 30px rgba(0,0,0,0.2);
+        }
+
+        .creator-section {
+            background: #111;
+            padding: 80px 20px;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        .yt-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--gold);
+            text-decoration: none;
+            font-family: 'Cinzel';
+            border: 1px solid var(--gold);
+            padding: 10px 25px;
+        }
+
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); opacity: 0.9; }
+            50% { transform: scale(1.03); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo.png.jpg" alt="THE FLEX Logo" class="main-logo">
+        <h1>THE FLEX</h1>
+        <p style="letter-spacing: 8px; color: var(--gold);">LUXURY &bull; ELEGANCE &bull; SOUL</p>
+    </header>
+
+    <h2 class="section-title">The Lineup</h2>
+    <div class="members-container">
+        <div class="member-card">
+            <img src="ira.jpg.png" alt="IRA">
+            <span class="mbti">ISFJ</span>
+            <h3>IRA</h3>
+            <p style="color: #FFB7C5; font-size: 0.8rem;">South Korea</p>
+        </div>
+        <div class="member-card">
+            <img src="skye.jpg.png" alt="SKYE">
+            <span class="mbti">ESFP</span>
+            <h3>SKYE</h3>
+            <p style="color: #0077BE; font-size: 0.8rem;">Australia</p>
+        </div>
+        <div class="member-card">
+            <img src="zara.jpg.png" alt="ZARA">
+            <span class="mbti">ENFJ</span>
+            <h3>ZARA</h3>
+            <p style="color: #FFFFFF; font-size: 0.8rem;">South Africa</p>
+        </div>
+        <div class="member-card">
+            <img src="jiya.jpg.png" alt="JIYA">
+            <span class="mbti">ENTJ</span>
+            <h3>JIYA</h3>
+            <p style="color: #800020; font-size: 0.8rem;">India</p>
+        </div>
+        <div class="member-card">
+            <img src="raya.jpg.png" alt="RAYA">
+            <span class="mbti">ISTJ</span>
+            <h3>RAYA</h3>
+            <p style="color: #E6E6FA; font-size: 0.8rem;">England</p>
+        </div>
+    </div>
+
+    <div class="reveal-box">
+        <h2 style="font-family: 'Cinzel'; margin: 0;">Unlock the Vision</h2>
+        <p style="color: #888; font-style: italic; margin-bottom: 30px;">"A heart that refused to stop beating."</p>
+        
+        <div id="form-container">
+            <input type="email" id="user-email" placeholder="ENTER EMAIL" required> <br>
+            <button class="gold-btn" onclick="revealLetter()">REVEAL THE STORY</button>
+        </div>
+
+        <div id="secret-letter">
+            <h3 style="color: #000; font-family: 'Cinzel'; margin-bottom: 20px;">A Message from P.Sheoran</h3>
+            <img src="letter.jpg.png" alt="Official Fan Letter">
+        </div>
+    </div>
+
+    <section class="creator-section">
+        <h2 style="font-family: 'Cinzel'; color: var(--gold);">The Visionary</h2>
+        <p style="max-width: 600px; margin: 20px auto; color: #ccc;">
+            Directed and Produced by the creative mind of <b>P.Sheoran</b>.
+        </p>
+        <a href="https://www.youtube.com/@theflexglobal" class="yt-link" target="_blank">OFFICIAL YOUTUBE</a>
+    </section>
+
+    <footer style="padding: 40px; text-align: center; color: #444; font-size: 0.7rem;">
+        &copy; 2026 THE FLEX GLOBAL | Produced by P.Sheoran
+    </footer>
+
+    <script>
+        function revealLetter() {
+            const email = document.getElementById('user-email').value;
+            if(email.includes('@')) {
+                document.getElementById('form-container').style.display = 'none';
+                document.getElementById('secret-letter').style.display = 'block';
+                document.querySelector('.reveal-box').style.background = '#fff';
+            } else {
+                alert("Please enter a valid email address.");
+            }
+        }
+    </script>
+</body>
+</html>
